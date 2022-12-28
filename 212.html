@@ -2,10 +2,11 @@
 <html>
 <body>
 <form>
-請輸入0-100，不守規矩評論皆待加強: <input type="text" id="score">
+請輸入0-100，(0-100以除錯): <input type="text" id="score">
 </form>
-<button type="button" onclick="eval()">Check!</button>
+<button type="button" onclick="eval()">評論!</button>
 <script>
+
 function eval(){
 let score=document.getElementById("score").value;
 if (score=="100"){
@@ -13,6 +14,21 @@ alert("天才!但不能自得意滿喔");
 }
 else if (score=="0"){
 alert("不要放棄,試著畫圖或暴力解法拉點分數");
+}
+else if (score=="5"){
+alert("待加強");
+}
+else if (score=="6"){
+alert("待加強");
+}
+else if (score=="7"){
+alert("待加強");
+}
+else if (score=="8"){
+alert("待加強");
+}
+else if (score=="9"){
+alert("待加強");
 }
 else if (score>="90"){
 alert("太聰明了，可惜差一點能滿分");
