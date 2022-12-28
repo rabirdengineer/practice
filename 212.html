@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+請輸入0-100，不守規矩評論皆待加強: <input type="text" id="score">
+</form>
+<button type="button" onclick="eval()">Check!</button>
+<script>
+function eval(){
+let score=document.getElementById("score").value;
+if (score=="100"){
+alert("天才!但不能自得意滿喔");
+}
+else if (score=="0"){
+alert("不要放棄,試著畫圖或暴力解法拉點分數");
+}
+else if (score>="90"){
+alert("太聰明了，可惜差一點能滿分");
+}
+else if (score>="80"){
+alert("不錯，繼續努力");
+}
+else if (score>="70"){
+alert("尚可");
+}
+else if (score>"60"){
+alert("及格了，恭喜");
+}
+else if (score=="60"){
+alert("剛好及格，別僥倖");
+}
+else if (score>="50"){
+alert("差一點及格，加油");
+}
+else if (score>="40"){
+alert("再努力，還有機會");
+}
+else if (score<"40"){
+alert("待加強");
+}
+
+}
+</script>
+</body></html>
